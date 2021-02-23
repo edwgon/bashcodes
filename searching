@@ -1,0 +1,21 @@
+grep
+Busca una cadena de caracteres en los archivos especificados y muestra que líneas contienen la cadena especificada.
+Parámetros
+-R
+Búsqueda recursiva dentro de subdirectorios si existen.
+-i
+Búsqueda que ignora las mayúsculas.
+-l
+Muestras el nombre del archivo, no las líneas de textos.
+-e: expresion regular
+-E expresion regular y escape
+grep -E '[0-9]' eje.txt
+grep -E '[0-9]{2}' eje.txt
+grep -e drama peliculas.txt | wc -l 
+dentro dir acytual
+grep -r . -e ximi
+
+awk
+date | awk '{print $2,$3,$6}'
+date | awk 'OFS="-" {print$2,$3,$6}'
+date | awk 'OFS="/" {print$2,$3,$6}'
